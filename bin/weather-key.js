@@ -10,6 +10,7 @@ program
 
 program
     .command('show')
+    .alias('get')
     .description('Get Current API Key')
     .action(()=>{
         keyCmd.show();
@@ -17,6 +18,7 @@ program
 
 program
     .command('remove')
+    .alias('rem')
     .description('Remove API Key')
     .action(()=>{
         keyCmd.remove()

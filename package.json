@@ -4,7 +4,7 @@
   "description": "A CLI tool to get current weather",
   "main": "index.js",
   "bin": "./bin/weather.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,6 @@
     "colors": "^1.4.0",
     "commander": "^8.3.0",
     "configstore": "^6.0.0",
-    "dotenv": "^10.0.0",
     "inquirer": "^8.2.0"
   }
 }

@@ -5,7 +5,7 @@ import FindManager from "../lib/findManager.js"
 import KeyManager from "../lib/keyManager.js";
 
 const findCmd={
-    async city(){
+    async city(tempType){
         const input = await inquirer.prompt({
             type:'input',
             name:'city',
@@ -16,7 +16,7 @@ const findCmd={
         try{
             const apikey= keyManager.getKey();
             const findManager = new FindManager(apikey);
-            findManager.getCityWeather(input.city);
+            findManager.getCityWeather(input.city,tempType);
         }catch(err)
         {
             console.log(err);
